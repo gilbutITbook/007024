@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-  <div id="app">
-    <form-component
-      :author="authorLabel"
-      :title="titleLabel">
-    </form-component>
-  </div>
+<div id="app">
+  <form-component
+    :author="authorLabel"
+    :title="titleLabel">
+  </form-component>
+</div>
 <script>
 const FormComponent ={
   template: `
@@ -20,7 +21,6 @@ const FormComponent ={
       <button>Submit</button>
     </form>
   </div>
-
   `,
   props: ['title', 'author']
 }
@@ -29,12 +29,11 @@ new Vue({
   components: {'form-component': FormComponent},
   data() {
     return {
-        titleLabel: 'The Title:',
-        authorLabel: 'The Author:',
-        pageLength: ''
+      titleLabel: 'The Title:',
+      authorLabel: 'The Author:',
+      pageLength: ''
     }
   }
-
 })
 </script>
 </body>

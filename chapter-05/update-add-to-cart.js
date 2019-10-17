@@ -1,3 +1,3 @@
 addToCart(aProduct) {
-  this.cart.push( aProduct.id );		
+  this.cart.push( aProduct.id );
 },

@@ -7,7 +7,7 @@ new Vue({
     },
     computed: {
       welcome() {
-        return store.state.msg
+        return store.state.msg;
       },
       counter() {
         return store.state.count;
@@ -15,9 +15,8 @@ new Vue({
     },
     methods: {
       increment() {
-        store.commit('increment')
+        store.commit('increment');
       }
-
     }
 });
 </script>

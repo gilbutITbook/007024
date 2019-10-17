@@ -1,5 +1,4 @@
-
-header h1{
+header h1 {
     padding: 10px 20px;
 }
 
@@ -7,25 +6,25 @@ body {
     max-width: 970px;
 }
 .cart {
-  padding: 20px 50px;
+    padding: 20px 50px;
 }
 .boxes {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .verify {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .submit {
-  margin-top:20px;
-  float: right;
+    margin-top: 20px;
+    float: right;
 }
 
 .pagecheckout {
-  padding: 20px 50px;
+    padding: 20px 50px;
 }
 .description {
-  font-size: 150%;
-  margin-top:50px;
+    font-size: 150%;
+    margin-top: 50px;
 }

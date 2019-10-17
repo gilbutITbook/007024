@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vuex"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
 </head>
 <body>
   <div id="app">
@@ -18,26 +19,25 @@
         count: 0
       },
       mutations: {
-        increment(state,payload) {
+        increment(state, payload) {
             state.count += payload;
         }
       },
       getters: {
-          msg(state) {
-            return state.msg.toUpperCase();
-          },
-          count(state) {
-            return state.count;
-          }
+        msg(state) {
+          return state.msg.toUpperCase();
+        },
+        count(state) {
+          return state.count;
+        }
       },
       actions: {
         increment(context, payload) {
-          setTimeout(function(){
-            context.commit('increment',payload);
-          },2000);
+          setTimeout(function() {
+            context.commit('increment', payload);
+          }, 2000);
         }
       }
-
   });
   new Vue({
       el: '#app',
@@ -58,7 +58,6 @@
         increment() {
           store.dispatch('increment', 10);
         }
-
       }
   });
 </script>

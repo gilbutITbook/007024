@@ -32,9 +32,9 @@ export default {
       }
     },
     computed: {
-    /*  albumData(){
+      /* albumData() {
         return this.$store.state.albums;
-      }*/
+      } */
     },
     middleware: 'search'
 }

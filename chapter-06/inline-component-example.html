@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   <div id="app">
@@ -17,7 +18,6 @@
   const MyComponent = {
     props: ['myInfo']
   };
-
   new Vue({
       el: '#app',
       components: {'my-component': MyComponent},

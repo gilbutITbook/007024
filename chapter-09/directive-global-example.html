@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-    <script src="https://unpkg.com/vue"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <html>
 <head>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div id='app'>
@@ -14,25 +15,25 @@
 <script>
   Vue.directive('style-me', {
     bind(el, binding) {
-        el.style.color = binding.value || "blue";
+      el.style.color = binding.value || "blue";
 
-        if(binding.modifiers.large)
-          el.style.fontSize= "42px";
-        else if(binding.modifiers.small)
-          el.style.fontSize="17px"
+      if (binding.modifiers.large)
+        el.style.fontSize = "42px";
+      else if (binding.modifiers.small)
+        el.style.fontSize = "17px";
 
-        el.className=binding.arg;
-      }
+      el.className = binding.arg;
+    }
   });
 
-new Vue({
-  el: '#app',
-  data() {
-    return {
-      welcome: '안녕하세요'
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        welcome: '안녕하세요'
+      }
     }
-  }
-});
+  });
 </script>
 </body>
 </html>

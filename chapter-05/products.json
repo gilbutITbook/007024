@@ -18,7 +18,15 @@
       "availableInventory": 7,
       "rating": 1
     },
-
+    {
+      "id": 1003,
+      "title": "고양이 화장실",
+      "description": "당신의 고양이를 위한 최고급 화장실입니다.",
+      "price": 1100,
+      "image": "assets/images/cat-litter.jpg",
+      "availableInventory": 99,
+      "rating": 4
+    },
     {
       "id": 1004,
       "title": "고양이 집",

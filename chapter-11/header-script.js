@@ -1,7 +1,7 @@
 <script>
 import firebase from 'firebase';
 export default {
-  name: 'Header',
+  name: 'my-header',
   data () {
     return {
       sitename: "Vue.js 애완용품샵"
@@ -14,9 +14,6 @@ export default {
       });
   },
   methods: {
-    showCheckout() {
-      this.$router.push({name: 'Form'});
-    },
     signIn() {
       let provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -27,11 +24,11 @@ export default {
     },
     signOut() {
       firebase.auth().signOut().then(function() {
-        // 로그아웃 성공.
+        // 로그아웃 성공
         console.log("로그아웃!")
       }).catch(function(error) {
         console.log("로그아웃 에러!")
-        // 에러 발생.
+        // 에러 발생
       });
     }
   },

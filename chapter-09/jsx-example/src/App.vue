@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld header="1" name="Erik"></HelloWorld>
+    <HelloWorld header="1" name="에릭"></HelloWorld>
   </div>
 </template>
 

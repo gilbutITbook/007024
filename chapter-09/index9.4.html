@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<script src="https://unpkg.com/vue"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <html>
 <head>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div id="app">
@@ -43,7 +44,7 @@
           <input v-model="item"
           type="item"
           class="form-control"
-          placeholder="Email Address"/>
+          placeholder="이메일 주소"/>
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-lg" @click.prevent="pressed(item)">버튼1 누르기</button>
@@ -51,7 +52,6 @@
       </form>
       </div>`,
       mixins: [myButton]
-
     }
 
     const comp2 = {
@@ -61,14 +61,14 @@
           <div class="form-group">
               <input v-model="item"
               class="form-control"
-              placeholder="Phone Number"/>
+              placeholder="전화번호"/>
           </div>
           <div class="form-group">
             <button class="btn btn-warning btn-lg" @click.prevent="pressed(item)">버튼2 누르기</button>
           </div>
         </form>
       </div>`,
-      mixins: [myButton]  
+      mixins: [myButton]
     }
 
     new Vue({
@@ -82,10 +82,7 @@
           myComp1: comp1,
           myComp2: comp2
       }
-
     });
-    </script>
   </script>
-
 </body>
 </html>

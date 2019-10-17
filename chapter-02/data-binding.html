@@ -1,19 +1,21 @@
 <html>
   <head>
     <title>Vue.js 애완용품샵</title>
-    <script src="https://unpkg.com/vue"></script>  </head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue"></script>
+  </head>
   <body>
     <div id="app">
       <header>
         <h1 v-text="sitename"></h1>
       </header>
     </div>
-<script type="text/javascript">
+    <script type="text/javascript">
       var webstore = new Vue({
         el: '#app',
         data: {
           sitename: 'Vue.js 애완용품샵'
-        }	
+        }
       });
     </script>
   </body>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vuex"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
 </head>
 <body>
   <div id="app">
@@ -32,7 +33,7 @@
       },
       computed: {
         welcome() {
-          return store.state.msg
+          return store.state.msg;
         },
         counter() {
           return store.state.count;
@@ -40,7 +41,7 @@
       },
       methods: {
         increment() {
-          store.commit('increment')
+          store.commit('increment');
         }
       }
   });

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
-  <body>
+<body>
   <div id="app">
     <my-component :num="myNumber" :str="passedString"
                   :even="myNumber" :obj="passedObject"></my-component>
@@ -44,8 +45,7 @@
         passedObject: {message: '넘겨준 객체'}
       }
     }
-
   });
   </script>
-  </body>
+</body>
 </html>

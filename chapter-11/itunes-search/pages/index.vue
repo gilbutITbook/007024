@@ -17,7 +17,6 @@ export default {
   methods: {
       submit(event) {
         this.$router.push(`results/${this.search}`);
-
       }
   }
 }

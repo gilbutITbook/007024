@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
-  <body>
+<body>
   <div id="app">
-  <my-component></my-component>
-  <my-component></my-component>
-  <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
   </div>
   <script>
   const counter = {counter: 0};
@@ -17,7 +18,6 @@
       return counter;
     }
   };
-
   new Vue({
     el: "#app",
     components: {'my-component': MyComponent},
@@ -26,7 +26,7 @@
         message: ''
       }
     }
-
   });
   </script>
+</body>
 </html>

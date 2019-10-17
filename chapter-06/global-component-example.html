@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
-  <body>
+<body>
   <div id="app">
     <my-component></my-component>
   </div>
@@ -11,10 +12,9 @@
   Vue.component('my-component', {
     template: '<div>안녕, 전역 컴포넌트로부터</div>'
   });
-
   new Vue({
     el: "#app"
   });
   </script>
-  </body>
+</body>
 </html>

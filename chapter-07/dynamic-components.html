@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-  <div class="app">
-    <button @click="cycle">순환하기</button>
-    <h1>
-      <component :is="currentView"/>
-    </h1>
-  </div>
+<div class="app">
+  <button @click="cycle">순환하기</button>
+  <h1>
+    <component :is="currentView"/>
+  </h1>
+</div>
 <script>
 const BookComponent ={
   template: `
@@ -36,7 +37,7 @@ const HeaderComponent = {
 }
 
 new Vue({
-  el: '.app',
+  el: '#app',
   components: {'book-component': BookComponent,
                'form-component': FormComponent,
                'header-component': HeaderComponent},
@@ -44,17 +45,15 @@ new Vue({
     return {
       currentView: BookComponent
     }
-
   },
   methods: {
-        cycle() {
-          if(this.currentView === HeaderComponent)
-            this.currentView = BookComponent
-          else
-            this.currentView = this.currentView === BookComponent ? FormComponent : HeaderComponent;
-        }
+    cycle() {
+      if(this.currentView === HeaderComponent)
+        this.currentView = BookComponent
+      else
+        this.currentView = this.currentView === BookComponent ? FormComponent : HeaderComponent;
     }
-
+  }
 })
 </script>
 </body>

@@ -44,5 +44,5 @@ var webstore = new Vue({
     if (APP_LOG_LIFECYCLE_EVENTS) {
       console.log("destroyed");
     }
-  }	
+  }
 });

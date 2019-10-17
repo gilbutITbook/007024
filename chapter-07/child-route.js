@@ -1,7 +1,8 @@
-import EditProduct from '@/components/EditProduct'
 import Product from '@/components/Product'
-…
+import EditProduct from '@/components/EditProduct'
+// ...
 {
+    // ...
     path: '/product/:id',
     name: 'Id',
     component: Product,
@@ -15,4 +16,4 @@ import Product from '@/components/Product'
       }
     ]
 },
-…
+// ...

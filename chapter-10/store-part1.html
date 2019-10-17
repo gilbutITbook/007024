@@ -3,14 +3,13 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-
 export const store = new Vuex.Store({
   state: {
-    products: {}
+    products: []
   },
   mutations: {
-    'SET_STORE' (state, products) {
+    'SET_STORE'(state, products) {
       state.products = products;
     }
   },
-  ...
+  <!-- ... -->

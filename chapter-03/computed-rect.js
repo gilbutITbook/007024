@@ -6,6 +6,6 @@ new Vue({
   computed: {
     area: function() {
       return this.length * this.width;
-    }                                      
+    }
   }
 });
