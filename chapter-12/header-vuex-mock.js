@@ -1,5 +1,4 @@
 describe('Header.vue', () => {
-
   let store;
   let getters;
   let mutations;

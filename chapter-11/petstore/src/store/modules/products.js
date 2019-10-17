@@ -1,5 +1,5 @@
 const state = {
-    products: [],
+    products: {},
     session: false
 };
 

@@ -8,7 +8,6 @@ const localVue = createLocalVue();
 localVue.use(Vuex)
 
 describe('Header.vue', () => {
-
   it('헤더에 올바르게 속성이 전달되었는지 확인', () => {
     const cartItemCount = 10;
     const wrapper = shallow(Header, {
@@ -16,5 +15,4 @@ describe('Header.vue', () => {
     })
     expect(wrapper.vm.cartItemCount).toBe(cartItemCount);
   })
-
 });
